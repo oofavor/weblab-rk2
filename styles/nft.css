@@ -1,0 +1,87 @@
+h1,
+h2 {
+  color: #3498db;
+}
+
+.nft-details {
+  display: flex;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.nft-details img {
+  width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.nft-info {
+  flex: 1;
+}
+
+.nft-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.nft-description {
+  margin-bottom: 20px;
+}
+
+.nft-price {
+  color: #27ae60;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.nft-status-available {
+  color: #27ae60;
+}
+
+.nft-status-sold {
+  color: #e74c3c;
+}
+
+.action-buttons button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.action-buttons button:hover {
+  background-color: #2980b9;
+}
+
+.action-buttons button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+main {
+  min-height: calc(100vh - 50px);
+  margin: 50px;
+}
+
+img {
+  width: 700px;
+}
+
+div {
+  font-size: 20px;
+}
+
+button {
+  font-size: 20px;
+}
+
+.nft-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}

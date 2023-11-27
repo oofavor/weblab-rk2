@@ -1,37 +1,111 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1,
+h2 {
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  color: #3498db;
 }
 
-nav {
-  background-color: #2c3e50;
+#carousel {
+  width: 100%;
+
   overflow: hidden;
+  position: relative;
+  flex: 1;
 }
 
-nav a {
-  float: left;
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 500px;
+  height: 500px;
   display: block;
-  color: #ecf0f1;
+  object-fit: contain;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: #3498db;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.main {
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.about {
+  padding-top: 20px;
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.about-section {
+  flex: 2;
+  font-size: 24px;
+}
+
+.nft-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-nav a:hover {
-  background-color: #34495e;
+.nft-title {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.user-tab {
-  float: right;
+.nft-description {
+  margin-bottom: 10px;
 }
 
-.user-tab a {
-  border-left: 1px solid #34495e;
+.nft-price {
+  color: #27ae60;
+  margin-bottom: 10px;
 }
 
-.user-tab a:hover {
-  background-color: #34495e;
+.nft-status-available {
+  color: #27ae60;
+}
+
+.nft-status-sold {
+  color: #e74c3c;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
 }
